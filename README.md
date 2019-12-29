@@ -26,6 +26,14 @@ func SetupRouter() * gin.Engine {
 
 Method yang digunakan adalah <strong>GET</strong>
 
+v5.GET("/showrecipe", app.ShowRecipe) = menampilkan daftar resep
+http://localhost:8071/api/v5/showrecipe
+
+v5.GET("/showingredient", app.ShowIngredient) = menampilkan daftar bahan
+http://localhost:8071/api/v5/showingredient
+
+v5.GET("/showlunch/:menu",app.ShowLunch) = menampilkan daftar bahan untuk membuat resep
+http://localhost:8071/api/v5/showlunch/Ham and Cheese Toastie
 
 # Screenshot
 <img src="https://github.com/qyraananda/multidimensional-array/blob/master/screenshot.png">
